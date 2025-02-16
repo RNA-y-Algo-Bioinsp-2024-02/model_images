@@ -21,7 +21,7 @@ executing==2.2.0
 fastapi==0.115.8
 flatbuffers==25.1.24
 fonttools==4.55.8
-gast==0.6.0
+gast  # Se eliminó la versión fija para evitar conflictos
 google-pasta==0.2.0
 grpcio==1.70.0
 grpclib==0.4.7
@@ -40,7 +40,7 @@ joblib==1.4.2
 jupyter_client==8.6.3
 jupyter_core==5.7.2
 kagglehub==0.3.7
-keras==3.8.0
+keras  # Se eliminó la versión fija para evitar conflictos con TensorFlow
 kiwisolver==1.4.8
 libclang==18.1.1
 Markdown==3.7
@@ -54,7 +54,7 @@ model-signing==0.2.0
 multidict==6.1.0
 namex==0.0.8
 nest-asyncio==1.6.0
-numpy==1.23.5  # 🔹 Se fuerza una versión compatible con Python 3.10
+numpy  # Se eliminó la versión fija para evitar conflictos con TensorFlow
 opt_einsum==3.4.0
 optree==0.14.0
 packaging==24.2
@@ -78,7 +78,7 @@ pyparsing==3.2.1
 python-dateutil==2.9.0.post0
 python-multipart==0.0.20
 pytz==2025.1
-pywin32==308; sys_platform == "win32"  # 🔹 Condicionamos pywin32 solo para Windows
+pywin32==308; sys_platform == "win32"  # Se mantiene solo para Windows
 pyzmq==26.2.1
 requests==2.32.3
 rfc3161-client==0.1.2
@@ -96,9 +96,9 @@ sniffio==1.3.1
 stack-data==0.6.3
 starlette==0.45.3
 statsmodels==0.14.4
-tensorboard==2.18.0
+tensorboard  # Se eliminó la versión fija para evitar conflictos
 tensorboard-data-server==0.7.2
-tensorflow  # 🔹 Se elimina `tensorflow_intel` y se deja sin versión específica
+tensorflow  # Se eliminó la versión fija para evitar conflictos
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.5.0
 threadpoolctl==3.5.0
